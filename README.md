@@ -1,6 +1,6 @@
 # polybar-buds
 
-A simple short script to quickly switch between A2DB Sink and HFP, as well as disconnect/connect to a specific bluetooth headset/earbuds.
+A simple short script to quickly switch between A2DP Sink and HFP, as well as disconnect/connect to a specific bluetooth headset/earbuds.
 
 ## Motivation
 
@@ -34,19 +34,19 @@ https://wiki.archlinux.org/title/Bluetooth#Pairing
 
 ## Additional information
 
-The script used to control the headset is dead simple. I use pacmd to toggle the headset's profile using the padmd "name" param which is just bluez_card.{MAC_ADDRESS}, and I use bluetoothctl to disconnect and connect based on the mac address
+The script used to control the headset is dead simple. I use pacmd to toggle the headset's profile by getting the card "name" param which is usually just bluez_card.{MAC_ADDRESS}, and I use bluetoothctl to disconnect and connect based on the mac address
 
 If you ever want to switch headsets to a different bluetooth headset, all you have to do is change the BT_HEADSET_NAME and BT_HEADSET_MAC env values to the new headset in the env.sh file (see the guide below).
 
 ## Setup Guide
 
-1. Clone the git repo (or you can just download the project as a zip)
+1. Clone the git repo, download the project as a zip, or manually create the files yourse
 
 2. Copy the polybar-buds directory into ~/.config/polybar/scripts/
 
 3. Copy and paste the contents of config.ini into your polybar config.ini at ~/.config/polybar/config.ini. (if your folder structure is different, you will need to manually modify path references in the config.ini contents and in the polybar-buds.sh script.)
 
-or copy from here if you don't want to download a zip or clone the repo:
+or copy from here if you don't want to download a zip or clone the repo (you would still need the polybar-buds directory in your .config/polybar/scripts directory):
 
 ```
 [module/headset]
@@ -117,7 +117,3 @@ font-3 = "RobotoMono Nerd Font:size=14;2"
 ## Thanks!
 
 Please let me know how this all works! This is my first time creating anything like thisand if you have any suggestions on how to make this polybar script better I would also love to hear.
-
-```
-
-```
