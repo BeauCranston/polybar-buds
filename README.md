@@ -34,7 +34,7 @@ https://wiki.archlinux.org/title/Bluetooth#Pairing
 
 ## Additional information
 
-The script used to control the headset is dead simple. I use pacmd to toggle the headset's profile using the padmd "name" param which is just bluez_card.{MAC_ADDRESS}, and I use bluetoothctl to disconnect and connect based on the mac address (which)
+The script used to control the headset is dead simple. I use pacmd to toggle the headset's profile using the padmd "name" param which is just bluez_card.{MAC_ADDRESS}, and I use bluetoothctl to disconnect and connect based on the mac address
 
 If you ever want to switch headsets to a different bluetooth headset, all you have to do is change the BT_HEADSET_NAME and BT_HEADSET_MAC env values to the new headset in the env.sh file (see the guide below).
 
