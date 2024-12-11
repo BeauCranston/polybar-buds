@@ -20,6 +20,7 @@ pulseaudio
 pulseaudio-bluetooth
 bluez
 bluez-utils
+nerd-fonts
 
 ##Ensure that you have already paired and connected the bluetooth headset via bluetoothctl
 
@@ -42,6 +43,24 @@ If you ever want to switch headsets to a different bluetooth headset, all you ha
 2. Copy the polybar-buds directory into ~/.config/polybar/scripts/
 
 3. Copy and paste the contents of config.ini into your polybar config.ini at ~/.config/polybar/config.ini. (if your folder structure is different, you will need to manually modify path references in the config.ini contents and in the polybar-buds.sh script.)
+
+or copy from here if you don't want to download a zip or clone the repo:
+
+```
+[module/headset]
+type = custom/script
+exec = source ~/.config/polybar/scripts/polybar-buds/env.sh && ~/.config/polybar/scripts/polybar-buds/polybar-buds.sh init
+click-left = source ~/.config/polybar/scripts/polybar-buds/env.sh && ~/.config/polybar/scripts/polybar-buds/polybar-buds.sh toggle
+click-right = source ~/.config/polybar/scripts/polybar-buds/env.sh && ~/.config/polybar/scripts/polybar-buds/polybar-buds.sh connect
+env-PLAYBACK_ICON=󰋋
+env-MIC_ICON=
+env-DISCONNECTED_ICON=󰟎
+label=" %output% "
+interval=2
+
+```
+
+remember to register the module to your bar!
 
 4. Open the env.sh file. You should see BT_HEADSET_NAME and BT_HEADSET_MAC as empty values.
 
@@ -69,6 +88,12 @@ After the above steps are completed you should be all set to use polybar-buds!
 Left-Click: will toggle from playback mode to mic mode
 
 Right-Click: will disconnect or connect your bluetooth headset
+
+_Note_
+If the icons end up being too small, create a new font inside of your bar section.
+
+For example this is my font for these icons specifically:
+font-3 = "RobotoMono Nerd Font:size=14;2"
 
 Please let me know how this all works! This is my first time creating anything like thisand if you have any suggestions on how to make this polybar script better I would also love to hear.
 
