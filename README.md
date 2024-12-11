@@ -48,7 +48,7 @@ If you ever want to switch headsets to a different bluetooth headset, all you ha
 
 or copy from here if you don't want to download a zip or clone the repo:
 
-ini ```
+```
 [module/headset]
 type = custom/script
 exec = source ~/.config/polybar/scripts/polybar-buds/env.sh && ~/.config/polybar/scripts/polybar-buds/polybar-buds.sh init
@@ -59,8 +59,6 @@ env-MIC_ICON=
 env-DISCONNECTED_ICON=󰟎
 label=" %output% "
 interval=2
-
-```
 
 ```
 
