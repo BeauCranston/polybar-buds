@@ -87,7 +87,7 @@ After the above steps are completed you should be all set to use polybar-buds!
 
 ## Controls
 
-Left-Click: will toggle from playback mode to mic mode
+Left-Click: will toggle between playback mode to mic mode
 
 Right-Click: will disconnect or connect your bluetooth headset
 
@@ -98,6 +98,6 @@ If the icons end up being too small, create a new font inside of your bar sectio
 For example this is my font for these icons specifically:
 font-3 = "RobotoMono Nerd Font:size=14;2"
 
-Please let me know how this all works! This is my first time creating anything like thisand if you have any suggestions on how to make this polybar script better I would also love to hear.
+## Thanks!
 
-Thanks!
+Please let me know how this all works! This is my first time creating anything like thisand if you have any suggestions on how to make this polybar script better I would also love to hear.
