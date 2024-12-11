@@ -77,7 +77,9 @@ remember to register the module to your bar!
 
 8. run: bluetoothctl devices Connected
 
-the output will look like so : Device D8:1F:22:9E:8B:30 HUAWEI FreeBuds Pro 3
+the output will look like so:
+
+- Device D8:1F:22:9E:8B:30 HUAWEI FreeBuds Pro 3
 
 9. Copy the MAC address portion (ex: D8:1F:22:9E:8B:30)
 
