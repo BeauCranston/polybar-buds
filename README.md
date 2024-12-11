@@ -48,7 +48,7 @@ If you ever want to switch headsets to a different bluetooth headset, all you ha
 
 or copy from here if you don't want to download a zip or clone the repo:
 
-```
+ini ```
 [module/headset]
 type = custom/script
 exec = source ~/.config/polybar/scripts/polybar-buds/env.sh && ~/.config/polybar/scripts/polybar-buds/polybar-buds.sh init
@@ -101,3 +101,4 @@ font-3 = "RobotoMono Nerd Font:size=14;2"
 ## Thanks!
 
 Please let me know how this all works! This is my first time creating anything like thisand if you have any suggestions on how to make this polybar script better I would also love to hear.
+```
