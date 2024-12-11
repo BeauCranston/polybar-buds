@@ -12,9 +12,9 @@ Also I hate having to connect my bluetooth microphone through a GUI or bluetooth
 
 The polybar-buds module hopefully solves all of these issues for the niche community of Arch users that use Pulse Audio, have a bluetooth headset / earbuds, and also use polybar.
 
-#Prequisites
+## Prequisites
 
-##Before using this tool, please ensure that you have the following packages:
+### Before using this tool, please ensure that you have the following packages:
 
 pulseaudio
 pulseaudio-bluetooth
@@ -22,21 +22,21 @@ bluez
 bluez-utils
 nerd-fonts
 
-##Ensure that you have already paired and connected the bluetooth headset via bluetoothctl
+### Ensure that you have already paired and connected the bluetooth headset via bluetoothctl
 
 A guide to do that can be found at:
 
 https://wiki.archlinux.org/title/Bluetooth#Pairing
 
-##Upon initial setup, your bluetooth headset will have to be connected so that you can grab the pacmd information for your device
+### Upon initial setup, your bluetooth headset will have to be connected so that you can grab the pacmd information for your device
 
-#Additional information
+## Additional information
 
 The script used to control the headset is dead simple. I use pacmd to toggle the headset's profile using the padmd "name" param which is just bluez_card.{MAC_ADDRESS}, and I use bluetoothctl to disconnect and connect based on the mac address (which)
 
 If you ever want to switch headsets to a different bluetooth headset, all you have to do is change the BT_HEADSET_NAME and BT_HEADSET_MAC env values to the new headset in the env.sh file (see the guide below).
 
-##Setup Guide
+## Setup Guide
 
 1. Clone the git repo (or you can just download the project as a zip)
 
@@ -83,14 +83,15 @@ the output will look like so : Device D8:1F:22:9E:8B:30 HUAWEI FreeBuds Pro 3
 
 After the above steps are completed you should be all set to use polybar-buds!
 
-##Controls
+## Controls
 
 Left-Click: will toggle from playback mode to mic mode
 
 Right-Click: will disconnect or connect your bluetooth headset
 
-_Note_
-If the icons end up being too small, create a new font inside of your bar section.
+## Font
+
+If the icons end up being too small, create a new font inside of your bar section. You will need nerd-fonts for the icons to show at all.
 
 For example this is my font for these icons specifically:
 font-3 = "RobotoMono Nerd Font:size=14;2"
