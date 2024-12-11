@@ -64,24 +64,24 @@ interval=2
 
 remember to register the module to your bar!
 
-4. Open the env.sh file. You should see BT_HEADSET_NAME and BT_HEADSET_MAC as empty values.
+4.  Open the env.sh file. You should see BT_HEADSET_NAME and BT_HEADSET_MAC as empty values.
 
-5. run the following command: pacmd list-cards
+5.  run the following command: pacmd list-cards
 
-6. search for the card that represents your bluetooth device (device must be connected at this point)
+6.  search for the card that represents your bluetooth device (device must be connected at this point)
 
-7. copy the "name" value which should look like this (ignore the angle brackets and only copy the name):
-   name: <bluez_card.C4_SS_3A_FF_63_50>
+7.  copy the "name" value which should look like this (ignore the angle brackets and only copy the name):
+    name: <bluez_card.C4_SS_3A_FF_63_50>
 
-   Paste the name into the BT_HEADSET_NAME value in the env.sh file
+    Paste the name into the BT_HEADSET_NAME value in the env.sh file
 
-8. run: bluetoothctl devices Connected
+8.  run: bluetoothctl devices Connected
 
-the output will look like so:
+        The output will look like so:
 
-- Device D8:1F:22:9E:8B:30 HUAWEI FreeBuds Pro 3
+        Device D8:1F:22:9E:8B:30 HUAWEI FreeBuds Pro 3
 
-9. Copy the MAC address portion (ex: D8:1F:22:9E:8B:30)
+9.  Copy the MAC address portion (ex: D8:1F:22:9E:8B:30)
 
 10. Paste the MAC address into the BT_HEADSET_MAC value in the env.sh
 
