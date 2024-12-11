@@ -1,5 +1,7 @@
 # polybar-buds
 
+## Motivation
+
 A simple short script to quickly switch between A2DB Sink and HFP, as well as disconnect/connect to a specific bluetooth headset/earbuds.
 
 I wanted to address the horrible support for wireless earbuds that have a microphone. The sound is fine, until you want to use the mic functionality.... HFP SUCKS.
@@ -14,7 +16,7 @@ The polybar-buds module hopefully solves all of these issues for the niche commu
 
 ## Prequisites
 
-### Before using this tool, please ensure that you have the following packages:
+#### Before using this tool, please ensure that you have the following packages:
 
 pulseaudio
 pulseaudio-bluetooth
@@ -22,13 +24,13 @@ bluez
 bluez-utils
 nerd-fonts
 
-### Ensure that you have already paired and connected the bluetooth headset via bluetoothctl
+#### Ensure that you have already paired and connected the bluetooth headset via bluetoothctl
 
 A guide to do that can be found at:
 
 https://wiki.archlinux.org/title/Bluetooth#Pairing
 
-### Upon initial setup, your bluetooth headset will have to be connected so that you can grab the pacmd information for your device
+#### Upon initial setup, your bluetooth headset will have to be connected so that you can grab the pacmd information for your device
 
 ## Additional information
 
