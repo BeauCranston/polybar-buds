@@ -62,6 +62,8 @@ interval=2
 
 ```
 
+```
+
 remember to register the module to your bar!
 
 4. Open the env.sh file. You should see BT_HEADSET_NAME and BT_HEADSET_MAC as empty values.
@@ -101,4 +103,7 @@ font-3 = "RobotoMono Nerd Font:size=14;2"
 ## Thanks!
 
 Please let me know how this all works! This is my first time creating anything like thisand if you have any suggestions on how to make this polybar script better I would also love to hear.
+
+```
+
 ```
